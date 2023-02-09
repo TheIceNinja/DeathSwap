@@ -62,7 +62,7 @@ public class GameCheckTask extends BukkitRunnable {
         }
 
         game.sendMessage("&aהשתגרתם!");
-        game.setRounds(game.getRounds() + 1); d
+        game.setRounds(game.getRounds() + 1);
         game.updateScoreBoard();
         game.sendMessage("&fזאת הייתה ההשתגרות ה&e" + game.getRounds() + " &fשלכם!");
 

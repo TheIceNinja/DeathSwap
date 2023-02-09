@@ -198,4 +198,3 @@ public class Game {
         return plugin.getConfig().getLocation("game.spectators");
     }
 }
-sealed
