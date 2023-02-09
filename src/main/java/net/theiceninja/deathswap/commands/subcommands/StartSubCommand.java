@@ -15,7 +15,7 @@ public class StartSubCommand implements SubCommand {
 
     @Override
     public void execute(Player player, String[] args) {
-        if (Bukkit.getOnlinePlayers().size() % 2 != 0) {
+        if (Bukkit.getOnlinePlayers().size() <= 1) {
             player.sendMessage(ColorUtil.color("&cאין מספיק שחקנים בשרת."));
             return;
         }
