@@ -23,7 +23,7 @@ public class CooldownTask extends BukkitRunnable {
 
             return;
         }
-
+        System.out.println();
         game.sendTitle("&eהמשחק מתחיל בעוד&8: &b" + timeLeft);
         game.playsound(Sound.BLOCK_NOTE_BLOCK_PLING);
         game.updateScoreBoard();
