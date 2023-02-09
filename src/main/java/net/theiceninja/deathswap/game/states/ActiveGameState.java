@@ -25,6 +25,7 @@ public class ActiveGameState extends GameState {
     public void onEnable(DeathSwapPlugin plugin) {
         super.onEnable(plugin);
         getGame().sendMessage("&aהמשחק התחיל!");
+
         int randomNumber = (int) getGame().randomizer(39, (60 * 5) + 1);
         this.checkTask = new GameCheckTask(randomNumber, getGame());
         this.checkTask.runTaskTimer(plugin, 0, 20);
