@@ -4,25 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdecb720-17c6-4142-9399-3bedeaff66f2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/commands/DeathSwapCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/commands/DeathSwapCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/Game.java" afterDir="false" />
+    <list default="true" id="fdecb720-17c6-4142-9399-3bedeaff66f2" name="Changes" comment="Plugin is ready!">
       <change beforePath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/states/ActiveGameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/states/ActiveGameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/states/CooldownGameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/states/CooldownGameState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/tasks/CooldownTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/tasks/CooldownTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/tasks/GameCheckTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/tasks/GameCheckTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DeathSwap-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/DeathSwap-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/theiceninja/deathswap/game/states/ActiveGameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/theiceninja/deathswap/game/states/ActiveGameState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/theiceninja/deathswap/game/tasks/CooldownTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/theiceninja/deathswap/game/tasks/CooldownTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/theiceninja/deathswap/game/tasks/GameCheckTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/theiceninja/deathswap/game/tasks/GameCheckTask.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -66,6 +62,58 @@
       <option name="presentableId" value="Default" />
       <updated>1675966524273</updated>
     </task>
+    <task id="LOCAL-00001" summary="כ">
+      <created>1675968007633</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675968007633</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Plugin is ready!">
+      <created>1675968155633</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675968155633</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Plugin is ready!">
+      <created>1675968230671</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675968230671</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Plugin is ready!">
+      <created>1675968319801</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675968319801</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Plugin is ready!">
+      <created>1675968329622</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675968329622</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="כ" />
+    <MESSAGE value="Plugin is ready!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Plugin is ready!" />
   </component>
 </project>
