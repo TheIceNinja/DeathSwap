@@ -20,6 +20,7 @@ public class CooldownTask extends BukkitRunnable {
         if (timeLeft <= 0) {
             cancel();
             game.setGameState(new ActiveGameState());
+            game.playsound(Sound.BLOCK_NOTE_BLOCK_BIT);
 
             return;
         }
