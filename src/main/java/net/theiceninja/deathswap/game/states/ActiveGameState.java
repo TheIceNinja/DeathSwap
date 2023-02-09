@@ -7,6 +7,7 @@ import net.theiceninja.deathswap.game.GameState;
 import net.theiceninja.deathswap.game.tasks.GameCheckTask;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
+import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
@@ -39,6 +40,7 @@ public class ActiveGameState extends GameState {
         if (this.checkTask != null) checkTask.cancel();
 
         getGame().sendMessage("&cהמשחק נגמר...");
+        getGame().playsound(Sound.ENTITY_ENDER_DRAGON_DEATH);
         for (UUID playerUUID : getGame().getPlayers()) {
             Player player = Bukkit.getPlayer(playerUUID);
             if (player == null) continue;
