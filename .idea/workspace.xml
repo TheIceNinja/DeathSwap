@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fdecb720-17c6-4142-9399-3bedeaff66f2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/commands/DeathSwapCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/commands/DeathSwapCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/states/ActiveGameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/states/ActiveGameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/states/CooldownGameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/states/CooldownGameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/tasks/CooldownTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/tasks/CooldownTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/tasks/GameCheckTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/tasks/GameCheckTask.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2LVqJ0MXUOUZ08S4faQOe66Dqd8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/desctop/pl/DeathSwap",
+    "mysql-explain.enableMySQLExplain": "true",
+    "mysql-explain.mysql.extras": "Using filesort,Using temporary",
+    "mysql-explain.mysql.filter": "QRTZ_,COUNT(0)",
+    "mysql-explain.mysql.showSQL": "true",
+    "mysql-explain.mysql.types": "ALL",
+    "settings.editor.selected.configurable": "io.github.newhoo.mysql.setting.SettingConfigurable"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\sagim\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fdecb720-17c6-4142-9399-3bedeaff66f2" name="Changes" comment="" />
+      <created>1675966524273</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675966524273</updated>
+    </task>
+    <servers />
+  </component>
+</project>
