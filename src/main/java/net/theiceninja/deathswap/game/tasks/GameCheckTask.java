@@ -22,7 +22,6 @@ public class GameCheckTask extends BukkitRunnable {
         if (timeLeft <= 0) {
             cancel();
 
-            // todo: swap
             teleportToRandomPlayer();
             return;
         }
@@ -36,6 +35,14 @@ public class GameCheckTask extends BukkitRunnable {
 
     private void teleportToRandomPlayer() {
         final List<UUID> alreadyTeleported = new ArrayList<>(); // the list of the players who were teleported
+        final Map<UUID, Location> locationMap = new HashMap<>();
+
+        for (UUID playerUUID : game.getPlayers()) {
+            Player player = Bukkit.getPlayer(playerUUID);
+            if (player == null) continue;
+
+            locationMap.put(player.getUniqueId(), player.getLocation());
+        }
 
         for (UUID playerUUID : game.getPlayers()) {
             Player player = Bukkit.getPlayer(playerUUID);
@@ -49,7 +56,7 @@ public class GameCheckTask extends BukkitRunnable {
             }
 
             alreadyTeleported.add(teleportedPlayer.getUniqueId());
-            Location location = teleportedPlayer.getLocation();
+            Location location = locationMap.get(teleportedPlayer.getUniqueId());
             player.teleport(location);
         }
 
@@ -58,6 +65,7 @@ public class GameCheckTask extends BukkitRunnable {
         game.sendMessage("&fזאת הייתה ההשתגרות ה&e" + game.getRounds() + " &fשלכם!");
 
         alreadyTeleported.clear();
+        locationMap.clear();
         ActiveGameState activeGameState = (ActiveGameState) game.getGameState();
 
         int randomNumber = (int) game.randomizer(39, (60 * 4) + 1);

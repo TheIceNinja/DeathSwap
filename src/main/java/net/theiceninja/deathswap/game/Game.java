@@ -115,22 +115,6 @@ public class Game {
         gameState.setGame(this);
         gameState.onEnable(plugin);
     }
-
-    public void pickRandomPlayerToTeleport(Player player) {
-        int randomPlayerIndex = (int) randomizer(-1, players.size());
-        Player randomPlayerToTeleport = Bukkit.getPlayer(players.get(randomPlayerIndex));
-        if (randomPlayerToTeleport == null) return;
-
-        while (player.equals(randomPlayerToTeleport)) {
-            randomPlayerToTeleport = Bukkit.getPlayer(players.get(randomPlayerIndex));
-        }
-
-        assert randomPlayerToTeleport != null;
-        Location playerLocation = randomPlayerToTeleport.getLocation();
-
-
-    }
-
     public double randomizer(int a, int b) {
         return (double) b + (Math.random() * (a - b + 1));
     }
