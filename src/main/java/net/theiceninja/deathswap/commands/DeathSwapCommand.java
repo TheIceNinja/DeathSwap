@@ -40,8 +40,6 @@ public class DeathSwapCommand implements CommandExecutor, TabCompleter {
             return true;
         }
 
-        System.out.println();
-
         if (args.length == 0) {
             player.sendMessage(ColorUtil.color("&eUsage: /deathswap <start|stop|setlocation>"));
             return true;
