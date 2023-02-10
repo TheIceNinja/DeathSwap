@@ -54,14 +54,13 @@ public class GameCheckTask extends BukkitRunnable {
             int randomPlayerIndex = (int) game.randomizer(-1, game.getPlayers().size());
             Player teleportedPlayer = Bukkit.getPlayer(game.getPlayers().get(randomPlayerIndex));
             // if the player is already been teleporting or is the same player so change the player
-            while (player.equals(teleportedPlayer) || alreadyTeleported.contains(teleportedPlayer.getUniqueId())) {
+            while (player.equals(teleportedPlayer) || alreadyTeleported.contains(Objects.requireNonNull(teleportedPlayer).getUniqueId())) {
                 randomPlayerIndex = (int) game.randomizer(-1, game.getPlayers().size());
                 teleportedPlayer = Bukkit.getPlayer(game.getPlayers().get(randomPlayerIndex));
             }
 
+            player.teleport(locationMap.get(teleportedPlayer.getUniqueId()));
             alreadyTeleported.add(teleportedPlayer.getUniqueId());
-            Location location = locationMap.get(teleportedPlayer.getUniqueId());
-            player.teleport(location);
         }
 
         game.sendMessage("&aהשתגרתם!");
@@ -74,6 +73,9 @@ public class GameCheckTask extends BukkitRunnable {
         ActiveGameState activeGameState = (ActiveGameState) game.getGameState();
 
         int randomNumber = (int) game.randomizer(39, (60 * 5) + 1);
+        if (activeGameState.getCheckTask() != null) activeGameState.getCheckTask().cancel();
+
+        activeGameState.setCheckTask(null);
         activeGameState.setCheckTask(new GameCheckTask(randomNumber, game));
         activeGameState.getCheckTask().runTaskTimer(game.getPlugin(), 0, 20);
     }

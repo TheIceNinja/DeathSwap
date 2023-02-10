@@ -35,6 +35,7 @@ public class ReviveSubCommand implements SubCommand {
             return;
         }
 
+        game.getSpectators().remove(target.getUniqueId());
         game.addPlayer(target);
         game.sendMessage("&eהשחקן &b&l" + target.getDisplayName() + " &eחזר לחיים!");
     }
