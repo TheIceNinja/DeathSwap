@@ -61,6 +61,7 @@ public class Game {
         if (!(gameState instanceof ActiveGameState)) return;
 
         spectators.add(player.getUniqueId());
+        player.teleport(getSpectatorsLocation());
         player.setGameMode(GameMode.SPECTATOR);
         updateScoreBoard();
         playsound(Sound.ENTITY_BLAZE_HURT);

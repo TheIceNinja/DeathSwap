@@ -1,9 +1,6 @@
 package net.theiceninja.deathswap.commands;
 
-import net.theiceninja.deathswap.commands.subcommands.SetLocationSubCommand;
-import net.theiceninja.deathswap.commands.subcommands.StartSubCommand;
-import net.theiceninja.deathswap.commands.subcommands.StopSubCommand;
-import net.theiceninja.deathswap.commands.subcommands.SubCommand;
+import net.theiceninja.deathswap.commands.subcommands.*;
 import net.theiceninja.deathswap.game.Game;
 import net.theiceninja.deathswap.utils.ColorUtil;
 import net.theiceninja.deathswap.utils.Messages;
@@ -24,6 +21,7 @@ public class DeathSwapCommand implements CommandExecutor, TabCompleter {
         subCommands.add(new SetLocationSubCommand(game.getPlugin()));
         subCommands.add(new StartSubCommand(game));
         subCommands.add(new StopSubCommand(game));
+        subCommands.add(new ReviveSubCommand(game));
     }
 
     @Override
@@ -41,7 +39,7 @@ public class DeathSwapCommand implements CommandExecutor, TabCompleter {
         }
 
         if (args.length == 0) {
-            player.sendMessage(ColorUtil.color("&eUsage: /deathswap <start|stop|setlocation>"));
+            player.sendMessage(ColorUtil.color("&eUsage: /deathswap <start|stop|setlocation|revive>"));
             return true;
         }
 
@@ -63,6 +61,7 @@ public class DeathSwapCommand implements CommandExecutor, TabCompleter {
             complete.add("start");
             complete.add("stop");
             complete.add("setlocation");
+            complete.add("revive");
         }
 
         List<String> result = new ArrayList<>();
