@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdecb720-17c6-4142-9399-3bedeaff66f2" name="Changes" comment="Adding some comments and changing stuff">
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/states/CommonListenerState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/states/CommonListenerState.java" afterDir="false" />
+    <list default="true" id="fdecb720-17c6-4142-9399-3bedeaff66f2" name="Changes" comment="Canceling stuff">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676012119403</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Canceling stuff">
+      <created>1676013873809</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1676013873809</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,6 +217,7 @@
     <MESSAGE value="Bug fixing - cancel pvp" />
     <MESSAGE value="Plugin is ready!" />
     <MESSAGE value="Adding some comments and changing stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding some comments and changing stuff" />
+    <MESSAGE value="Canceling stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Canceling stuff" />
   </component>
 </project>
