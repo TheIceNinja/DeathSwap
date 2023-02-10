@@ -73,7 +73,6 @@ public class GameCheckTask extends BukkitRunnable {
         ActiveGameState activeGameState = (ActiveGameState) game.getGameState();
 
         int randomNumber = (int) game.randomizer(39, (60 * 5) + 1);
-        if (activeGameState.getCheckTask() != null) activeGameState.getCheckTask().cancel();
 
         activeGameState.setCheckTask(null);
         activeGameState.setCheckTask(new GameCheckTask(randomNumber, game));
