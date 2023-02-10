@@ -11,6 +11,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.entity.EntityDamageEvent;
+import org.bukkit.event.entity.EntityPickupItemEvent;
 import org.bukkit.event.entity.FoodLevelChangeEvent;
 import org.bukkit.event.player.PlayerDropItemEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
@@ -68,6 +69,17 @@ public class CommonListenerState implements Listener {
     @EventHandler
     private void onFoodLevelChange(FoodLevelChangeEvent event) {
         if (game.getGameState() instanceof ActiveGameState) return;
+
+        event.setCancelled(true);
+    }
+
+    @EventHandler
+    private void onItemPickup(EntityPickupItemEvent event) {
+        if (game.getGameState() instanceof ActiveGameState) return;
+        if (!(event.getEntity() instanceof Player)) return;
+
+        Player player = (Player) event.getEntity();
+        if (player.getGameMode() == GameMode.CREATIVE) return;
 
         event.setCancelled(true);
     }

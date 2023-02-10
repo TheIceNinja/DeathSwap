@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fdecb720-17c6-4142-9399-3bedeaff66f2" name="Changes" comment="Adding some comments and changing stuff">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/commands/subcommands/ReviveSubCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/commands/DeathSwapCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/commands/DeathSwapCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/states/CommonListenerState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/theiceninja/deathswap/game/states/CommonListenerState.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,19 +39,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/desctop/pl/DeathSwap",
-    "mysql-explain.enableMySQLExplain": "true",
-    "mysql-explain.mysql.extras": "Using filesort,Using temporary",
-    "mysql-explain.mysql.filter": "QRTZ_,COUNT(0)",
-    "mysql-explain.mysql.showSQL": "true",
-    "mysql-explain.mysql.types": "ALL",
-    "settings.editor.selected.configurable": "io.github.newhoo.mysql.setting.SettingConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/desctop/pl/DeathSwap&quot;,
+    &quot;mysql-explain.enableMySQLExplain&quot;: &quot;true&quot;,
+    &quot;mysql-explain.mysql.extras&quot;: &quot;Using filesort,Using temporary&quot;,
+    &quot;mysql-explain.mysql.filter&quot;: &quot;QRTZ_,COUNT(0)&quot;,
+    &quot;mysql-explain.mysql.showSQL&quot;: &quot;true&quot;,
+    &quot;mysql-explain.mysql.types&quot;: &quot;ALL&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;io.github.newhoo.mysql.setting.SettingConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\sagim\AppData\Roaming\Subversion</configuration>
