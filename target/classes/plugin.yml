@@ -1,0 +1,11 @@
+name: DeathSwap
+main: net.theiceninja.deathswap.DeathSwapPlugin
+version: 1.0.0
+api-version: 1.18
+author: TheIceNinja
+commands:
+  deathswap:
+    description: main command
+    permission: deathswap.admin
+    aliases:
+      - ds
