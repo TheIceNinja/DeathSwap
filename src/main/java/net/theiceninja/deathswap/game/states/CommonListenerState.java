@@ -11,6 +11,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.entity.EntityDamageEvent;
+import org.bukkit.event.entity.FoodLevelChangeEvent;
 import org.bukkit.event.player.PlayerDropItemEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 
@@ -62,5 +63,12 @@ public class CommonListenerState implements Listener {
 
         if (block.getType().equals(Material.CHEST))
             event.setCancelled(true);
+    }
+
+    @EventHandler
+    private void onFoodLevelChange(FoodLevelChangeEvent event) {
+        if (game.getGameState() instanceof ActiveGameState) return;
+
+        event.setCancelled(true);
     }
 }
