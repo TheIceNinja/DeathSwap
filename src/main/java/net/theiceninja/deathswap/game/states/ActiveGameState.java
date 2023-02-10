@@ -76,8 +76,8 @@ public class ActiveGameState extends GameState {
         Player player = event.getEntity();
         if (!getGame().isPlaying(player)) return;
 
-        getGame().removePlayer(player);
         event.setDeathMessage(null);
+        getGame().removePlayer(player);
     }
 
     @EventHandler
@@ -91,12 +91,13 @@ public class ActiveGameState extends GameState {
     @EventHandler
     private void onQuit(PlayerQuitEvent event) {
         Player player = event.getPlayer();
-        event.setQuitMessage(null);
 
         if (getGame().isSpectating(player)) {
             getGame().getSpectators().remove(player.getUniqueId());
+            event.setQuitMessage(null);
         } else {
             getGame().removePlayer(player);
+            event.setQuitMessage(null);
         }
     }
 

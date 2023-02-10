@@ -77,38 +77,6 @@ public class Game {
         }
     }
 
-    public void sendMessage(String message) {
-        for (UUID playerUUID : players) {
-            Player player = Bukkit.getPlayer(playerUUID);
-            if (player == null) continue;
-
-            player.sendMessage(ColorUtil.color(Messages.PREFIX + message));
-        }
-
-        for (UUID playerUUID : spectators) {
-            Player player = Bukkit.getPlayer(playerUUID);
-            if (player == null) continue;
-
-            player.sendMessage(ColorUtil.color(Messages.PREFIX + message));
-        }
-    }
-
-    public void sendTitle(String message) {
-        for (UUID playerUUID : this.players) {
-            Player player = Bukkit.getPlayer(playerUUID);
-            if (player == null) continue;
-
-            player.sendTitle(ColorUtil.color("&#FA1B00&lDeath&#E300FA&lSwap"), ColorUtil.color(message), 0, 40, 0);
-        }
-
-        for (UUID playerUUID : this.spectators) {
-            Player player = Bukkit.getPlayer(playerUUID);
-            if (player == null) continue;
-
-            player.sendTitle(ColorUtil.color("&#FA1B00&lDeath&#E300FA&lSwap"), ColorUtil.color(message), 0, 40, 0);
-        }
-    }
-
     private void setScoreboard(Player player) {
         ScoreboardManager manager = Bukkit.getScoreboardManager();
         Scoreboard scoreboard = manager.getNewScoreboard();
@@ -175,6 +143,38 @@ public class Game {
             if (player == null) continue;
 
             player.playSound(player, sound, 1, 1);
+        }
+    }
+
+    public void sendMessage(String message) {
+        for (UUID playerUUID : players) {
+            Player player = Bukkit.getPlayer(playerUUID);
+            if (player == null) continue;
+
+            player.sendMessage(ColorUtil.color(Messages.PREFIX + message));
+        }
+
+        for (UUID playerUUID : spectators) {
+            Player player = Bukkit.getPlayer(playerUUID);
+            if (player == null) continue;
+
+            player.sendMessage(ColorUtil.color(Messages.PREFIX + message));
+        }
+    }
+
+    public void sendTitle(String message) {
+        for (UUID playerUUID : this.players) {
+            Player player = Bukkit.getPlayer(playerUUID);
+            if (player == null) continue;
+
+            player.sendTitle(ColorUtil.color("&#FA1B00&lDeath&#E300FA&lSwap"), ColorUtil.color(message), 0, 40, 0);
+        }
+
+        for (UUID playerUUID : this.spectators) {
+            Player player = Bukkit.getPlayer(playerUUID);
+            if (player == null) continue;
+
+            player.sendTitle(ColorUtil.color("&#FA1B00&lDeath&#E300FA&lSwap"), ColorUtil.color(message), 0, 40, 0);
         }
     }
 
