@@ -35,8 +35,8 @@ public class GameCheckTask extends BukkitRunnable {
     }
 
     private void teleport() {
-        final List<UUID> alreadyTeleported = new ArrayList<>(); // the list of the players who were teleported
-        final Map<UUID, Location> locationMap = new HashMap<>(); // list of all the locations before the teleportation
+        final List<UUID> alreadyTeleported = new ArrayList<>(); 
+        final Map<UUID, Location> locationMap = new HashMap<>(); 
 
         // save their locations
         for (UUID playerUUID : game.getPlayers()) {
@@ -53,7 +53,6 @@ public class GameCheckTask extends BukkitRunnable {
 
             int randomPlayerIndex = (int) game.randomizer(-1, game.getPlayers().size());
             Player teleportedPlayer = Bukkit.getPlayer(game.getPlayers().get(randomPlayerIndex));
-            // if the player is already been teleporting or is the same player so change the player
             while (player.equals(teleportedPlayer) || alreadyTeleported.contains(Objects.requireNonNull(teleportedPlayer).getUniqueId())) {
                 randomPlayerIndex = (int) game.randomizer(-1, game.getPlayers().size());
                 teleportedPlayer = Bukkit.getPlayer(game.getPlayers().get(randomPlayerIndex));
